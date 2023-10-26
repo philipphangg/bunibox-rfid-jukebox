@@ -1,0 +1,14 @@
+[Unit]
+Description=Arcade Buttons USB Encoder Service
+After=network.target iptables.service firewalld.service
+
+[Service]
+User=volumio
+Group=volumio
+Restart=always
+RestartSec=10
+WorkingDirectory=/home/volumio/bunibox
+ExecStart=/home/volumio/bunibox/arcade_buttons_usb_encoder.py
+
+[Install]
+WantedBy=multi-user.target

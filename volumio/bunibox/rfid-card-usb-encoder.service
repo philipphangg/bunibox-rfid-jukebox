@@ -1,0 +1,14 @@
+[Unit]
+Description=RFID card USB Encoder Service
+After=network.target iptables.service firewalld.service
+
+[Service]
+User=volumio
+Group=volumio
+Restart=always
+RestartSec=10
+WorkingDirectory=/home/volumio/bunibox
+ExecStart=/home/volumio/bunibox/rfid_card_usb_encoder.py
+
+[Install]
+WantedBy=multi-user.target
