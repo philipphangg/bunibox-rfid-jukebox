@@ -9,7 +9,7 @@ The advantages of using Volumio for this project include Spotify support and a w
 
 ## How It Works
 
-Whenever a new and unknown RFID card is placed on the reader, a Volumio playlist is automatically created with a combined name that includes "RFID-" as a prefix along with the card code. When a known RFID card is placed on the reader, the associated playlist is played. Since the card code is printed on the RFID cards, finding the corresponding playlists is easy. To add music, podcasts, internet radio stations, or any other content to the playlists, Volumio's GUI is utilized.
+Whenever a new and unknown RFID card is placed on the reader, a Volumio playlist is automatically created with a combined name that includes "RFID-" as a prefix along with the card code (e.g. RFID-7334897777). When a known RFID card is placed on the reader, the associated playlist is played. Since the card code is printed on the RFID cards, finding the corresponding playlists is easy. To add music, podcasts, internet radio stations, or any other content to the playlists, Volumio's GUI is utilized.
 
 ## Software documentation
 
