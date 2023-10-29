@@ -7,11 +7,14 @@ The project was initially started with Phoniebox in 2021. In 2022, Spotify disab
 The advantages of using Volumio for this project include Spotify support and a well-documented API. The installation process is also more straightforward. Using Volumio's API, you can easily create an RFID kids' jukebox. RFID and arcade buttons are implemented as Python services/daemons, as they existed from the initial Phoniebox implementation. Additionally, Volumio's plugin system allows for the possibility of implementing a plugin ;)
 
 
+## How It Works
+
+Whenever a new and unknown RFID card is placed on the reader, a Volumio playlist is automatically created with a combined name that includes "RFID-" as a prefix along with the card code. When a known RFID card is placed on the reader, the associated playlist is played. Since the card code is printed on the RFID cards, finding the corresponding playlists is easy. To add music, podcasts, internet radio stations, or any other content to the playlists, Volumio's GUI is utilized.
+
 ## Software documentation
 
 The main software documentation/HowTo of the RFID kids audio jukebox based on Volumio can be found in the folder [volumio/](volumio/README.md). 
 The old software documentation/HowTo of the RFID kids audio jukebox based on Phoniebox is under [phoniebox/](phoniebox/README.md)
-
 
 ## Hardware
 
