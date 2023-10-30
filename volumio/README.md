@@ -61,6 +61,7 @@ See:
 Install socket.io client for Python with `sudo apt install python-socketio-client python-evdev python-systemd`
 
 2.) Change input device in [rfid_card_usb_encoder.py](bunibox/rfid_card_usb_encoder.py) and [arcade_buttons_usb_encoder.py](bunibox/arcade_buttons_usb_encoder.py)
+
 3.) Copy encoder directory with make `copy-usb-encoders`
 
 4.) SSH to bunibox `ssh volumio@bunibanibox.local` and then `cd bunibox` . 
